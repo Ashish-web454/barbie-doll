@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who Is This Beautiful?</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+
+    /* YOUR BACKGROUND IMAGE */
+    background:url("./images/main6.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* TOP TEXT */
+
+.top-line{
+    left:80px;
+    top: 25%;
+
+    text-align: center;
+    color:#c66a61;
+    font-size:40px;
+    font-weight:700;
+    line-height:1.1;
+}
+
+/* LEFT TEXT */
+
+.left-text{
+    position:absolute;
+    left:80px;
+    top:43%;
+    transform:translateY(-50%);
+
+    color:#c66a61;
+    font-size:60px;
+    font-weight:700;
+    line-height:1.1;
+}
+
+/* CENTER IMAGE */
+
+.center-photo{
+    position:absolute;
+    left:50%;
+    top:58%;
+    transform:translate(-50%,-50%);
+}
+
+.center-photo img{
+    width:330px;
+    height:auto;
+}
+
+/* NEXT BUTTON */
+
+.next-btn{
+    position:absolute;
+    right:90px;
+    top:50%;
+    transform:translateY(-50%);
+
+    text-decoration:none;
+
+    background:#f4b8c7;
+    color:#d95b68;
+
+    padding:20px 55px;
+
+    border-radius:40px;
+
+    font-size:32px;
+    font-weight:700;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+    transition:.3s;
+}
+
+.next-btn:hover{
+    transform:translateY(-50%) scale(1.05);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.left-text{
+    font-size:35px;
+    left:25px;
+}
+
+.center-photo img{
+    width:220px;
+}
+
+.next-btn{
+    right:20px;
+    font-size:22px;
+    padding:15px 35px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP TEXT -->
+<div class="top-line">
+    Umm... you don't need a Barbie as a birthday present. Just take a look in the mirror—you already are one. 💕✨
+</div>
+
+<!-- LEFT TEXT -->
+<div class="left-text">
+    Who is this<br>
+    beautiful??
+</div>
+
+<!-- CENTER PHOTO -->
+<div class="center-photo">
+    <img src="./images/camera2.png" alt="Camera">
+</div>
+
+<!-- NEXT BUTTON -->
+<a href="page5.html" class="next-btn">
+    Next
+</a>
+
+</body>
+</html>
